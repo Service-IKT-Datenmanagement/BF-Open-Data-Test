@@ -1,0 +1,43 @@
+{
+    "$id": "https://berliner-feuerwehr.de/schema/BFW_Stat_ID_15",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "title": "Kennzahlendatensatz",
+    "description": "Ein Datensatz über wichtige Kennzahlen der Berliner Feuerwehr.\n Wenn von echten Einsätzen gesprochen wird, dann handelt es sich um Einsätze die auch für den Jahresbericht zählen.  \n Dies bedeutet Keine Fehleinsätze, keine Testeinsätze, keine befristeten Außerdienstnahmen, keine Einsätze ohne ausgerückte Einsatzmittel, usw.",
+        "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+            "einsatz_angelegt_datum":{
+                "type": "datetime",
+                "description": "Das Datum an dem die Einsätze angelegt wurden.\n Alle Anderen Zahlen beziehen sich auf Einsätze und Alarmierungen die an diesem Datum angelegt wurden.",
+                "examples":"2023-12-31"
+            },
+            "anzahl_einsaetze_gesamt":{
+                "type": "integer",
+                "description": "Die Anzahl der echten Einsätze. "
+            },
+            "anzahl_einsaetze_brand":{
+                "type": "integer",
+                "description": "Die Anzahl der echten Brände."
+            },
+            "anzahl_einsaetze_rettungsdienst":{
+                "type": "integer",
+                "description": "Die Anzahl der echten Rettungsdiensteinsätze."
+            },
+            "anzahl_einsaetze_technische_hilfeleistung":{
+                "type": "integer",
+                "description": "Die Anzahl der echten Einsätze der Kategorie Technische Hilfeleistung"
+            },
+            "anzahl_einsaetze_rettungsdienst_mit_technischer_hilfeleistung":{
+                "type": "integer",
+                "description": "Die Anzahl der echten Rettungsdiensteinsätze mit technischer Hilfeleistung"
+            },
+            "anzahl_einsaetze_sonstige":{
+                "type": "integer",
+                "description": "Die Anzahl der echten, sonstigen Einsätze"
+            }
+        
+        }
+    }
+}
