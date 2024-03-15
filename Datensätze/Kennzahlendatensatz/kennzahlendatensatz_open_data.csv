@@ -1,4 +1,4 @@
-,einsatz_angelegt_datum,einsaetze_anzahl_alle,einsaetze_anzahl_brand,einsaetze_anzahl_rettungsdienst,einsaetze_anzahl_technische_hilfeleistung,einsaetze_anzahl_rettungsdienst_mit_technischer_hilfeleistung,einsaetze_anzahl_sonstige
+,datum,E_A,E_B,E_R,E_T,E_RT,E_S
 0,2018-01-01,2235,393,1744,58,40,0
 1,2018-01-02,1242,34,1135,42,31,0
 2,2018-01-03,1358,32,1223,43,60,0
